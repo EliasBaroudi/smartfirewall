@@ -13,12 +13,6 @@ SmartFireWall is a network traffic analyzer and firewall rules generator. Its ma
 - Fully configurable via config.py
 - Docker-ready for easy deployment
 
-## Optional Depedencies
-
-- AfterGlow (only for Linux)
-- Docker 
-- Elasticsearch
-
 ## Installation
 
 1. Clone the repository:
@@ -34,7 +28,30 @@ SmartFireWall is a network traffic analyzer and firewall rules generator. Its ma
    pip install -r requirements.txt
    ```
    
-5. Place your PCAP files in the ./data/ directory.
+4. Place your PCAP files in the ./data/ directory.
+
+## Optional Dependencies
+
+### AfterGlow (Linux only)
+
+AfterGlow is used to generate network visualization graphs.
+
+1. Download `afterglow.pl` from the official repository:
+   https://github.com/zrlram/afterglow
+
+2. Place `afterglow.pl` in the project root directory (next to `script.py`).
+
+3. Make sure Perl and Graphviz (`neato`) are installed on your system.
+
+---
+
+### Elasticsearch
+
+If `user_elastic = True` in `config.py`, you must run an Elasticsearch instance.
+
+You can deploy Elasticsearch using Docker.  
+Official documentation:  
+https://www.elastic.co/docs/deploy-manage/deploy/self-managed/install-elasticsearch-with-docker
 
 ## Configuration
 
