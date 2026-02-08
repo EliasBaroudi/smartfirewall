@@ -82,8 +82,8 @@ docker-compose up -d
 ```
 
 Note : 
-   - If your are using Elasticsearch outside docker you'll have to specify the correct url in config.py
-   - You'll need to create a Data View to use the generated indexs
+   - If you are running Elasticsearch outside of Docker, make sure to update the `elastic_url` in `config.py`.
+   - You will need to create a Data View in Elasticsearch to access the generated indices.
 
 ![DataView](./screenshots/dataview.png)
 
