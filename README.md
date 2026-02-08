@@ -23,16 +23,19 @@ SmartFireWall is a network traffic analyzer and firewall rules generator. Its ma
 ## Installation
 
 1. Clone the repository:
-   
+
+   ```bash
    git clone https://github.com/EliasBaroudi/smartfirewall/
-   
    cd smartfirewall
+   ```
 
 3. Install Python dependencies:
-   
-   pip install -r requirements.txt
 
-4. Place your PCAP files in the ./data/ directory.
+   ```bash
+   pip install -r requirements.txt
+   ```
+   
+5. Place your PCAP files in the ./data/ directory.
 
 ## Configuration
 
@@ -46,21 +49,29 @@ SmartFireWall is a network traffic analyzer and firewall rules generator. Its ma
 
 ### Local Python Execution
 
+```bash
 python script.py
+```
 
 ### Using Docker
 
 1. Create a Docker network:
 
+```bash
 docker network create smfw_lan
+```
 
 2. Launch Elasticsearch via Docker Compose (Elasticsearch and smartfirewall need to be in the same network):
 
+```bash
 docker-compose up -d
+```
 
 3. Run SmartFireWall container:
 
+```bash
 docker run --rm --network=smfw_lan -it -v ./:/app smartfirewall python script.py
+```
 
 ## Output
 
