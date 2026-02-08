@@ -13,12 +13,11 @@ SmartFireWall is a network traffic analyzer and firewall rules generator. Its ma
 - Fully configurable via config.py
 - Docker-ready for easy deployment
 
-## Requirements
+## Optional Depedencies
 
-- Python 3.11+
-- Linux for AfterGlow visualization
-- Docker (optional)
-- Elasticsearch (if user_elastic = True)
+- AfterGlow (only for Linux)
+- Docker 
+- Elasticsearch
 
 ## Installation
 
