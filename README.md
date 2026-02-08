@@ -91,7 +91,7 @@ docker run --rm --network=smfw_lan -it -v ./:/app smartfirewall python script.py
 
 1. Running the script
 
-   ```bash
+   ```sh
    docker run --rm --network=smfw_lan -it -v ./:/app smartfirewall python script.py
    
    ####### LOADING FILES #######
