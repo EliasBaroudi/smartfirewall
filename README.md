@@ -1,4 +1,4 @@
-# SmartFireWall
+![SMARTFIREWALL](./screenshots/banner.png)
 
 SmartFireWall is a network traffic analyzer and firewall rules generator. Its main purpose is to **help with firewall configuration**. It reads PCAP/PCAPNG files, analyzes network flows, generates CSV/SQLite/Elasticsearch outputs, and can visualize traffic using AfterGlow.  
 
