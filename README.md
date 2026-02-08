@@ -161,3 +161,8 @@ docker run --rm --network=smfw_lan -it -v ./:/app smartfirewall python script.py
 
 ![Graph](./screenshots/dashboard.png)
 
+## License
+
+This project includes `afterglow.pl` which is licensed under GNU GPL v2.
+Original authors: Raffael Marty and Christian Beedgen.
+See the file header for full copyright information.
