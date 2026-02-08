@@ -41,13 +41,11 @@ AfterGlow is used to generate network visualization graphs.
 
 2. Place `afterglow.pl` in the project root directory (next to `script.py`).
 
-3. Make sure Perl and Graphviz (`neato`) are installed on your system.
-
----
+3. Make sure Perl, libtext-csv-perl and Graphviz (`neato`) are installed on your system.
 
 ### Elasticsearch
 
-If `user_elastic = True` in `config.py`, you must run an Elasticsearch instance.
+If you want to use Elasticsearch, you must run an instance.
 
 You can deploy Elasticsearch using Docker.  
 Official documentation:  
