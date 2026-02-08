@@ -23,11 +23,11 @@ class Config():
     user_db = True 
 
     # Send data to Elasticsearch/ELK
-    user_elastic = True 
+    user_elastic = False
 
     # Generate a vizualisation with afterglow
     # Only on Linux kernels
-    user_afterglow = True
+    user_afterglow = False
 
 
 
@@ -55,4 +55,5 @@ class Config():
     # Threshold to consider a server as "public" 
     # If a server receives connections from more than X different sources,
     # use stateful rules instead of listing each source
+
     public_server_threshold = 15
