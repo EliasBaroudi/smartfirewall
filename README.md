@@ -24,7 +24,7 @@ SmartFireWall is a network traffic analyzer and firewall rules generator. Its ma
 
 1. Clone the repository:
    
-   git clone https://github.com/yourusername/smartfirewall.git
+   git clone [https://github.com/yourusername/smartfirewall.git](https://github.com/EliasBaroudi/smartfirewall/)
    cd smartfirewall
 
 2. Install Python dependencies:
