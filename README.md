@@ -25,13 +25,14 @@ SmartFireWall is a network traffic analyzer and firewall rules generator. Its ma
 1. Clone the repository:
    
    git clone https://github.com/EliasBaroudi/smartfirewall/
+   
    cd smartfirewall
 
-2. Install Python dependencies:
+3. Install Python dependencies:
    
    pip install -r requirements.txt
 
-3. Place your PCAP files in the ./data/ directory.
+4. Place your PCAP files in the ./data/ directory.
 
 ## Configuration
 
