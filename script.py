@@ -409,6 +409,6 @@ with open(path + "rules.txt", "w", encoding="utf-8") as f:
 
     f.write("-A INPUT -j DROP\n")
     f.write("COMMIT\n")
-    f.write("#Completed on " + time.asctime() + "\n")
 
 print(f"[+] Rules file saved to: {path + 'rules.txt'}")
+
