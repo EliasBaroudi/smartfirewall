@@ -43,6 +43,11 @@ AfterGlow is used to generate network visualization graphs.
 
 3. Make sure Perl, libtext-csv-perl and Graphviz (`neato`) are installed on your system.
 
+```
+apt install -y libtext-csv-perl
+apt install -y graphviz
+```
+
 ### Elasticsearch
 
 To use Elasticsearch, you need to create a Docker network and run an Elasticsearch instance within it:
