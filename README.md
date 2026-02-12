@@ -69,29 +69,17 @@ python script.py
 
 ### Using Docker
 
-1. Create a Docker network:
-
 ```bash
-docker network create smfw_lan
-```
-
-2. Launch Elasticsearch via Docker Compose (Elasticsearch and smartfirewall need to be in the same network):
-
-```bash
-docker-compose up -d
+docker run --rm --network=smfw_lan -it -v ./:/app smartfirewall python script.py
 ```
 
 Note : 
+   - Replace `smfw_lan` with your Elasticsearch Docker network. You can omit the --network option if you are not using Elasticsearch.
    - If you are running Elasticsearch outside of Docker, make sure to update the `elastic_url` in `config.py`.
    - You will need to create a Data View in Elasticsearch to access the generated indices.
 
 ![DataView](./screenshots/dataview.png)
 
-3. Run SmartFireWall container:
-
-```bash
-docker run --rm --network=smfw_lan -it -v ./:/app smartfirewall python script.py
-```
 
 ## Output
 
