@@ -45,10 +45,14 @@ AfterGlow is used to generate network visualization graphs.
 
 ### Elasticsearch
 
-If you want to use Elasticsearch, you must run an instance.
+To use Elasticsearch, you need to create a Docker network and run an Elasticsearch instance within it:
 
-You can deploy Elasticsearch using Docker.  
-Official documentation:  
+```
+docker create network smfw_lan
+docker-compose up -d 
+```
+
+For more information, see:
 https://www.elastic.co/docs/deploy-manage/deploy/self-managed/install-elasticsearch-with-docker
 
 ## Configuration
@@ -74,7 +78,7 @@ docker run --rm --network=smfw_lan -it -v ./:/app smartfirewall python script.py
 ```
 
 Note : 
-   - Replace `smfw_lan` with your Elasticsearch Docker network. You can omit the --network option if you are not using Elasticsearch.
+   - Replace `smfw_lan` with your Elasticsearch Docker network if needed. You can omit the --network option if you are not using Elasticsearch.
    - If you are running Elasticsearch outside of Docker, make sure to update the `elastic_url` in `config.py`.
    - You will need to create a Data View in Elasticsearch to access the generated indices.
 
