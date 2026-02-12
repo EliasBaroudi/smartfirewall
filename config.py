@@ -49,6 +49,8 @@ class Config():
     # use stateful rules instead of listing each source
     public_server_threshold = 15
 
+
+    
     # Range of TCP random ports considered as stateful
     tcp_random_range = range(32768, 65536) 
 
@@ -59,4 +61,5 @@ class Config():
     
 
     
+
 
